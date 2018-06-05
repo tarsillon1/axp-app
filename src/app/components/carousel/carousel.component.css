@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+  margin-top: 150px;
+}
+
+li {
+  margin-left: -40px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}

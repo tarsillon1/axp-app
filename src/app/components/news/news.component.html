@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 text-info">
+      <div class="container bg-light rounded">
+        <h1>{{post.title}}</h1>
+
+        <b>{{post.subtitle}}</b> <br/><br/>
+
+
+        {{post.likes}} <br/>
+
+        <li *ngFor="let comment of post.comments">
+          <comment [comment]="comment"></comment>
+        </li>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img class="img rounded" src="{{post.image}}" width="960px" height="540px">
+    </div>
+  </div>
+</div>
+
+<hr/>
+
